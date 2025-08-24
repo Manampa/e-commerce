@@ -222,6 +222,7 @@ FEATURES
  }
  .books {
     display: flex;
+    flex-wrap: wrap;
 
  }
 
@@ -271,10 +272,80 @@ FEATURES
 
 /*
 
-LASTEST BOOKS
+LASTEST BOOKS-----
+ "#recent" is the only thing I added that david didnt show
+  so keep this in mind if theres any problems
+  check everything bwlow this message
+  
 
 */
 
-#latest__books {
+#recent {
     padding-top: 8vw;
+}
+
+/* Explore More Books section */
+
+#Explore {
+    padding: 8vw;
+    background-color: rgba(115, 66, 214, 0.1);
+}
+
+/*
+
+
+footer 
+
+
+*/
+
+footer {
+    background-color: #242424;
+}
+.footer__social--list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 28px;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* percentage padding used here----------------------- */
+    padding: 8% 0;
+}
+
+.footer__logo--img {
+    width: 70px;
+    height: 70px;
+}
+
+.footer__social--link,
+.footer__copyright, 
+.footer__logo--popper {
+    color: #fff;
+    text-decoration: none;
+} 
+
+.footer__logo--popper { /* hover effect example reusable */
+    position: absolute;
+    right: 0;
+    top: 30px;
+    font-weight: 700;
+    opacity: 0;
+    transition: all 300ms ease;
+
+}
+.footer__anchor {
+    position: relative;
+    margin-bottom: 20px;
+}
+.footer__anchor:hover .footer__logo--popper {
+    transform: translateX(60px);
+    opacity: 1;
+
 }
