@@ -140,6 +140,11 @@ width: 100%;
 max-width: 1200px;
 margin: 0 auto;
 }
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* 
 highlights 
@@ -284,10 +289,13 @@ LASTEST BOOKS-----
     padding-top: 8vw;
 }
 
-/* Explore More Books section */
+/* 
 
-#Explore {
-    padding: 8vw;
+Explore More Books section
+
+*/
+
+#explore {
     background-color: rgba(115, 66, 214, 0.1);
 }
 
@@ -299,7 +307,9 @@ footer
 
 */
 
-footer {
+
+
+/* footer {
     background-color: #242424;
 }
 .footer__social--list {
@@ -314,9 +324,9 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     /* percentage padding used here----------------------- */
-    padding: 8% 0;
+    /* padding: 8% 0;
 }
 
 .footer__logo--img {
@@ -331,8 +341,8 @@ footer {
     text-decoration: none;
 } 
 
-.footer__logo--popper { /* hover effect example reusable */
-    position: absolute;
+.footer__logo--popper { hover effect example reusable */
+    /* position: absolute;
     right: 0;
     top: 30px;
     font-weight: 700;
@@ -348,4 +358,4 @@ footer {
     transform: translateX(60px);
     opacity: 1;
 
-}
+} */
